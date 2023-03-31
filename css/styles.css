@@ -1,0 +1,14 @@
+/*variables are declared here. These are the colors for the page*/
+:root {
+  --dkcyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --ddkblue: hsl(212, 21%, 14%);
+  --dkgrblue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+  
+}
+
+#component {
+  width: 375px;
+  height: ;
+}
