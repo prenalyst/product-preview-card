@@ -1,14 +1,94 @@
 /*variables are declared here. These are the colors for the page*/
 :root {
   --dkcyan: hsl(158, 36%, 37%);
+  --ddkcyan: hsl(157, 34%, 17%);
   --cream: hsl(30, 38%, 92%);
   --ddkblue: hsl(212, 21%, 14%);
   --dkgrblue: hsl(228, 12%, 48%);
   --white: hsl(0, 0%, 100%);
-  
+  --sans: 'Montserrat', sans-serif;
+  --serif: 'Fraunces', serif;
 }
 
+body {
+  padding: 0;
+  background-color: var(--cream);
+}
+
+a {
+  color: var(--white);
+  font-family: var(--sans);
+  text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 14px;
+  font-family: var(--sans);
+  padding: 0;
+  font-weight: 100;
+}
+
+p.product-name {
+  letter-spacing: 3px;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  font-family: var(--serif);
+}
+
+
+/* styles for the product card */
 #component {
   width: 375px;
-  height: ;
+  margin: 0 auto;
+  background-color: var(--white);
+  border-radius: 10px;
+}
+
+/* styles for the product image */
+#product-image img {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+/* styles for the product details */
+#product-details {
+  padding: 1rem;
+}
+
+.price {
+  font-family: var(--serif);
+  color: var(--dkcyan);
+}
+
+/* styles for cart */
+#cart {
+  text-align: center;
+  padding: 1rem;
+  margin: 0;
+  display: flex;
+}
+
+button {
+  background-color: var(--dkcyan);
+  border: none;
+  border-radius: 10px;
+  height: 3rem;
+  cursor: pointer;
+  flex-grow: 1;
+  color: var(--white);
+  font-family: var(--sans)
+}
+
+button:hover {
+  background-color: var(--ddkcyan);
 }
